@@ -23,7 +23,7 @@ body {
   color: var(--text);
   font: 17px/1.65 Nunito, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: var(--gold); text-underline-offset: 3px; }
 a:hover { color: #ffd77a; }
 
