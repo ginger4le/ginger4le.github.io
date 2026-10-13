@@ -156,3 +156,8 @@ main:not(.wrap) h2 { font-family: inherit; font-weight: 800; font-size: 19px; ma
 main:not(.wrap) section { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 20px 14px; margin: 16px 0; }
 nav.lang { display: flex; gap: 16px; border: 0; margin: 8px 0 24px; }
 .muted { color: var(--faint); font-size: 15px; }
+.wshots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: -52px; position: relative; }
+.wshots img { width: 100%; border-radius: 12px; border: 1px solid var(--line); }
+.wshots.single { grid-template-columns: 1fr; max-width: 860px; margin-left: auto; margin-right: auto; }
+.phero .status { display: inline-block; font-size: 14px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; }
+@media (max-width: 560px) { .wshots { grid-template-columns: minmax(0, 1fr); } }
