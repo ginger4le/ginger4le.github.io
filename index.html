@@ -4,23 +4,65 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ginger4le Games</title>
+<meta name="description" content="Kleine Spiele von Artem Bruner. Small games by Artem Bruner.">
+<meta name="theme-color" content="#160a12">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
+<script src="assets/lang.js"></script>
 </head>
 <body>
-<main>
-<h1>Ginger4le Games</h1>
-<p class="muted">Kleine Spiele von Artem Bruner · Small games by Artem Bruner</p>
+<header class="top"><div class="wrap">
+  <a class="logo" href="./">ginger4le</a>
+  <nav class="nav">
+    <a href="#spiele" class="hide-sm"><span class="de">Spiele</span><span class="en">Games</span></a>
+    <a href="#kontakt" class="hide-sm"><span class="de">Kontakt</span><span class="en">Contact</span></a>
+    <span class="lang"><button data-set="de" aria-label="Deutsch">DE</button><button data-set="en" aria-label="English">EN</button></span>
+  </nav>
+</div></header>
 
-<h2>Infernal Ledger: Idle Office</h2>
-<ul class="games">
-  <li><a href="infernal-ledger/delete-data.html">Daten löschen · Delete your data</a></li>
-</ul>
+<main class="wrap">
+  <section class="hero">
+    <h1><span class="de">Kleine Spiele, <span class="hl">große Freude.</span></span><span class="en">Small games, <span class="hl">big fun.</span></span></h1>
+    <p><span class="de">Indie-Spiele von Artem Bruner, gemacht für ein paar gute Minuten am Tag.</span><span class="en">Indie games by Artem Bruner, made for a few good minutes a day.</span></p>
+  </section>
 
-<h2>Wardwinter TD</h2>
-<ul class="games">
-  <li><a href="wardwinter/privacy.html">Datenschutz · Privacy</a></li>
-</ul>
-<p class="muted">Kontakt · Contact: <a href="mailto:ginger4le.dev@gmail.com">ginger4le.dev@gmail.com</a></p>
+  <h2 id="spiele"><span class="de">Spiele</span><span class="en">Games</span></h2>
+  <div class="games">
+    <a class="game" href="infernal-ledger/" style="--accent:#d9482f">
+      <img src="infernal-ledger/img/icon.png" alt="" width="72" height="72">
+      <div>
+        <h3>Infernal Ledger</h3>
+        <p><span class="de">Idle-Spiel im Höllenbüro: Akten stempeln, Seelen sortieren, Dämonen einstellen.</span><span class="en">An idle game about Hell's paperwork: stamp files, sort souls, hire demons.</span></p>
+        <span class="badge"><span class="de">Bald bei Google Play</span><span class="en">Coming to Google Play</span></span>
+      </div>
+    </a>
+    <div class="game" style="--accent:#5b8fd9">
+      <div class="dot" aria-hidden="true" style="width:72px;height:72px;border-radius:16px;flex:none;background:#1c2740;display:grid;place-items:center;font-family:var(--pixel);font-size:30px;color:#9cc0f0;">W</div>
+      <div>
+        <h3>Wardwinter TD</h3>
+        <p><span class="de">Labyrinth bauen, Wellen aufhalten, mit Freunden.</span><span class="en">Build a maze, hold back the waves, with friends.</span></p>
+        <a class="badge" href="wardwinter/privacy.html"><span class="de">Datenschutz</span><span class="en">Privacy</span></a>
+      </div>
+    </div>
+    <div class="game soon">
+      <div class="dot" aria-hidden="true">?</div>
+      <div>
+        <h3><span class="de">Mehr in Arbeit</span><span class="en">More in the works</span></h3>
+        <p><span class="de">Weitere Spiele folgen. Schau bald wieder vorbei.</span><span class="en">More games are on the way. Check back soon.</span></p>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="kontakt"><span class="de">Kontakt</span><span class="en">Contact</span></h2>
+  <p class="section-lead"><span class="de">Fragen, Fehler, Ideen? Schreib mir gern.</span><span class="en">Questions, bugs, ideas? Drop me a line.</span></p>
+  <a class="btn primary" href="mailto:ginger4le.dev@gmail.com">ginger4le.dev@gmail.com</a>
 </main>
+
+<footer class="foot"><div class="wrap">
+  <span>© 2026 Ginger4le · Artem Bruner</span>
+  <a href="infernal-ledger/delete-data.html">Infernal Ledger: <span class="de">Daten löschen</span><span class="en">delete your data</span></a>
+  <a href="wardwinter/privacy.html">Wardwinter TD: <span class="de">Datenschutz</span><span class="en">privacy</span></a>
+  <span class="sp"><span class="de">Gemacht mit Godot</span><span class="en">Made with Godot</span></span>
+</div></footer>
 </body>
 </html>
