@@ -1,8 +1,14 @@
-// Shows German or English: saved choice first, else the browser language. The buttons switch and remember it.
+// Shows German or English: ?lang= in the URL first, then the saved choice, else the browser language. The buttons switch and remember it.
 (function () {
   var root = document.documentElement;
   var lang = null;
-  try { lang = localStorage.getItem("lang"); } catch (e) {}
+  var asked = /[?&]lang=(de|en)\b/.exec(location.search);
+  if (asked) {
+    lang = asked[1];
+    try { localStorage.setItem("lang", lang); } catch (e) {}
+  } else {
+    try { lang = localStorage.getItem("lang"); } catch (e) {}
+  }
   if (lang !== "de" && lang !== "en") {
     lang = (navigator.language || "de").toLowerCase().indexOf("de") === 0 ? "de" : "en";
   }
